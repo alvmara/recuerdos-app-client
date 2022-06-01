@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Recuerdos App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### La aplicación para inmortalizar los recuerdos de tus viajes
 
-## Available Scripts
 
-In the project directory, you can run:
+![Imagen aplicación](/screenshots/imagen1.png)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Desarrollo
+Para el desarrollo se ha seguido una aproximación Outside-In. Se han Dockerizado las aplicaciones de forma que agiliza el desarrollo y la puesta en producción con el uso de Docker Compose.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Dependencias utilizadas
 
-### `npm test`
+Para el desarrollo del Frontend se ha utilazado React.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Nombre                          | Versión | Descipción        |
+--------------------------------|---------|-------------------|
+**@emotion/react**              | 11.9.0  | Paquete de animaciones utilizado por MUI |
+**@emotion/styled**             | 11.8.1  |Paquete para hacer "Styled Components" usado por MUI
+**@mui/icons-material**         | 5.6.2   | Paquete de iconos de Google material usado por MUI
+**@mui/material**               | 5.6.4   | Framework de UI Components basado en Material Design
+**@testing-library/jest-dom**   | 5.16.4  | Paquete para tsting unitario
+**@testing-library/react**      | 13.1.1  | Paquete para testing desde el punto de vista del usuario
+**@testing-library/user-event** | 13.5.0  | Paquete para testing desde el punto de vista del usuario
+**react**                       | 18.1.0  | React
+**react-dom**                   | 18.1.0  | React
+**react-dropzone**              | 14.2.0  | Provee herramientas para crear Dropzones
+**react-redux**                 | 8.0.1   | Redux
+**react-responsive-carousel**   | 3.2.23  | Nos provee herramientas para realizar galerías de imágenes
+**react-router-dom**            | 6.3.0   | Router
+**react-scripts**               | 5.0.1   | Building
+**redux**                       | 4.2.0   | Redux
+**redux-localstorage**          | 0.4.1   | Middleware Redux Localstorage
+**usehooks-ts**                 | 2.5.2   | Paquete de hooks útiles
+**web-vitals**                  | 2.1.4   | Reportes de Web Performance
 
-### `npm run build`
+#### Deploy
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+La base de datos se ha desplegado en MongoDB Atlas y  la aplicación web se ha desplegado en heroku.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Frontend](https://recuerdos-app-client.herokuapp.com/)
